@@ -284,7 +284,7 @@ jobs:
             libtalloc-devel \
             libtdb-devel \
             libtracker-sparql-3_0-0 \
-            libwolfssl-dev \
+            libwolfssl-devel \
             libxslt-tools \
             meson \
             ninja \
@@ -546,7 +546,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install dependencies
         run: |
-          brew install berkeley-db cmark-gfm docbook-xsl libxslt meson mysql nettle talloc wolfssl
+          brew install berkeley-db cmark-gfm docbook-xsl libxslt meson mysql talloc wolfssl
           wget https://www.unicode.org/Public/UNIDATA/UnicodeData.txt
       - name: Configure
         run: |
